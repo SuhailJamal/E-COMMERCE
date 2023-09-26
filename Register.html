@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(dinh-ng-jYz3EGBhDpk-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+
+
+        .login h1 {
+            text-align: center;
+
+        }
+
+        .login {
+            width: 350px;
+            border: 2px solid white;
+            border-radius: 10px;
+            backdrop-filter: blur(20px);
+
+            padding: 50px 40px;
+            color: white;
+
+        }
+
+        .usr {
+            width: 100%;
+            height: 45px;
+
+            display: block;
+            border-radius: 40px;
+            border: none;
+            background: transparent;
+            padding: 10px;
+            border: 1px solid white;
+            color: white;
+        }
+
+        input {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+    
+        label a {
+            text-decoration: none;
+            color: white;
+        }
+
+        label a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .Ac {
+            display: flex;
+            justify-content: space-between;
+        }
+        .Ac a{
+            text-decoration: none;
+            color: white;
+        }
+        .Ac a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Register</h1>
+        <form action="login.html">
+            <input type="text" class="usr" placeholder="First Name">
+            <input type="text" class="usr" placeholder="Last Name">
+            <input type="number" class="usr" placeholder="+91 XXXXXXXXXX">
+            <input type="email" class="usr" placeholder="JohnDoe@mail.com">
+            <input type="text" class="usr" placeholder="Username">
+            <input type="password" class="usr" placeholder="Password">
+            <!-- <div class="rf"> <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div> -->
+            <div class="Ac"> <label> Already have an account? </label><a href="login.html">Login</a></div>
+            <input type="submit" class="btn" value="Register">
+            <!-- <label> Don't have an account? <a href="#">Register</a></label> -->
+        </form>
+
+    </div>
+
+</body>
+
+</html>
