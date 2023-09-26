@@ -22,11 +22,11 @@
         font-weight: bold;
       }
 
-      bck {
+      /* bck {
         background-position: center;
         height: 100%;
         width: 1000px;
-      }
+      } */
 
       .image {
         display: inline;
@@ -54,16 +54,22 @@
         height: 500px;
         padding: 10px 0px;
       }
+      #SALE {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
 
-      .colright {
+      /* .colright {
         background: url("pexels-maria-orlova-4940756.jpg");
         background-position: center;
         margin: 2px;
-      }
+      } */
 
       .colleft {
-        background: url(sale33.jpg) no-repeat;
-        background-position: center;
+        /* background: url(sale33.jpg) no-repeat;
+        background-position: center; */
+        background-color: red;
         color: white;
         font-size: large;
         text-align: center;
@@ -71,13 +77,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2px;
+        /* margin: 2px; */
       }
 
       .btn {
         border: none;
         padding: 15px;
         background-color: black;
+        margin-bottom: 10px;
 
         cursor: pointer;
 
@@ -97,20 +104,20 @@
       .content {
         margin: 0px 50px;
       }
-      .sections {
+      /* .sections {
         display: flex;
         margin: 0px 50px;
         justify-content: space-evenly;
         align-items: center;
         height: 350px;
-      }
-      .sect {
+      } */
+      /* .sect {
         width: 350px;
 
         height: 290px;
 
         box-shadow: 5px 5px rgb(226, 210, 210);
-      }
+      } */
       div ul li {
         display: inline;
       }
@@ -120,19 +127,70 @@
       .icons {
         display: inline;
       }
-
+      /* tr div {
+        height: 290px;
+        width: 350px;
+        box-shadow: 5px 5px rgb(226, 210, 210);
+      } */
+      /* 
       .sect > img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-      }
+      } */
       li a {
         text-decoration: none;
         color: black;
       }
+      /* tr {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      } */
       li a:hover {
         text-decoration: underline;
-        font-size: 20px;
+        /* font-size: 20px; */
+      }
+      /* img.categories {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      table {
+        width: 100%;
+        margin-top: 50px;
+        border: 2px solid red;
+      }
+      .catname{
+        font-weight: bold; 
+        /* text-align: e; */
+      /* font-size: 25px; */
+      /* }
+      .catsmall{
+        font-weight: lighter;
+        font-size: 10px;
+        margin: auto;
+      }  */
+      /* =======NEW STYLE========== */
+      .cart {
+        width: 250px;
+        /* background-color: blue; */
+        /* border-radius: 10px; */
+      }
+      .cart-image img {
+        width: 100%;
+      }
+      .cart-title {
+        text-align: center;
+       
+      }
+      /* .cart-title p {
+        margin-bottom: 15px;
+      } */
+      .slide{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
       }
     </style>
   </head>
@@ -154,7 +212,7 @@
         <div class="icons">
           <ul>
             <li>
-              <img class="image" src="user.png" alt="" height="15" width="15" />
+             <a href="login.html"> <img class="image" src="user.png" alt="" height="15" width="15" /></a>
             </li>
             <li>
               <img
@@ -192,12 +250,72 @@
           <button class="btn"><a href="">SHOP NOW</a></button>
         </div>
       </div>
-      <div class="colright"></div>
+      <div class="colright"><img src="SALEBANNER.jpg" id="SALE" alt="" /></div>
     </div>
-    <div class="sections">
+    <!-- <div class="sections">
       <div class="sect"><img src="uktra.jpg" alt="" /></div>
       <div class="sect"><img src="wommen.jpg" alt="" /></div>
       <div class="sect"><img src="shoes.jpg" alt="" /></div>
+    </div> -->
+    <!-- <table>
+      <tr>
+        <td>
+          <div><img src="menutra.jpg" class="categories" alt="" /></div>
+        </td>
+        <td>
+          <div><img src="wommen.jpg" class="categories" alt="" /></div>
+        </td>
+        <td>
+          <div><img src="shoes.jpg" class="categories" alt="" /></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="catname">MEN</td>
+        <td class="catname">Women</td> "
+        <td class="catname">Shoes</td>
+      </tr>
+      <tr>
+        <td class="catsmall">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, voluptatem!</td>
+        <td class="catsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, maxime.</td>
+        <td class="catsmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, distinctio.</td>
+      </tr>
+    </table> -->
+    <div class="slide">
+    <div class="cart">
+      <div class="cart-image"><img src="wommen.jpg" alt="" /></div>
+      <div class="cart-title">
+        <b>WOMEN</b>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis
+          dolorum eos. Obcaecati, nemo voluptatem.
+        </p>
+        <button class="btn"><a href="#">CLICK HERE</a></button>
+      </div>
     </div>
+
+    <div class="cart">
+      <div class="cart-image"><img src="men-3.jpg" alt="" /></div>
+      <div class="cart-title">
+        <b>MEN</b>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis
+          dolorum eos. Obcaecati, nemo voluptatem.
+        </p>
+        <button class="btn"><a href="#">CLICK HERE</a></button>
+      </div>
+    </div>
+
+    <div class="cart">
+      <div class="cart-image"><img src="shoes-2.jpg" alt="" /></div>
+      <div class="cart-title">
+        <b>SHOES</b>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis
+          dolorum eos. Obcaecati, nemo voluptatem.
+        </p>
+        <button class="btn"><a href="#">CLICK HERE</a></button>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
